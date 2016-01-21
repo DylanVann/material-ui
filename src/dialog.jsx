@@ -345,6 +345,7 @@ const DialogInline = React.createClass({
     //Vertically center the dialog window, but make sure it doesn't
     //transition to that position.
     if (repositionOnUpdate || !container.style.paddingTop) {
+      paddingTop = Math.ceil(paddingTop);
       container.style.paddingTop = paddingTop + 'px';
     }
 
